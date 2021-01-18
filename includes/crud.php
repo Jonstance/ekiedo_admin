@@ -1,11 +1,11 @@
 <?php
 /*
- * @Author Rory Standley <rorystandley@gmail.com>
+ * @Author Constance Etiosa <constancejco@gmail.com>
  * @Version 1.0
  * @Package Database
  */
 
-define('DOMAIN_URL', 'https://you_app_panel.com/'); /* chnage to your domain here - don't forget to add forward slash at the end of the URL like this "/" */
+define('DOMAIN_URL', 'http://localhost/admin/'); /* chnage to your domain here - don't forget to add forward slash at the end of the URL like this "/" */
 define('ALLOW_MODIFICATION', 1);
 define('JWT_SECRET_KEY', 'replace_with_your_strong_jwt_secret_key'); /* chnage to your secret key here set it to anything you like*/
 
@@ -19,9 +19,9 @@ class Database
      */
 
     private $db_host = "localhost";  // Change as required
-    private $db_user = "DB_USER";  // Change as required
-    private $db_pass = "DB_PASSWORD";  // Change as required
-    private $db_name = "DB_NAME";    // Change as required
+    private $db_user = "root";  // Change as required
+    private $db_pass = "";  // Change as required
+    private $db_name = "ekiadmin";    // Change as required
 
     /*
      * Extra variables that are required by other function such as boolean con variable

@@ -134,7 +134,7 @@ if(isset($_POST['settings']) ) {
         if(!empty($res)){
             $settings['error'] = false;
             $settings['settings'] = json_decode($res[0]['value'],1);
-            $settings['settings']['currency'] = "₹";
+            $settings['settings']['currency'] = "₦";
             print_r(json_encode($settings));
             
         }else{

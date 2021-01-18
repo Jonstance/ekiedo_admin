@@ -109,7 +109,7 @@ if (isset($_POST['system_configurations'])) {
     }
     $date = $db->escapeString(date('Y-m-d'));
     // $data = $fn->get_settings('currency');
-    $currency = empty($_POST['currency']) ? '₹' : $db->escapeString($fn->xss_clean($_POST['currency']));
+    $currency = empty($_POST['currency']) ? '₦' : $db->escapeString($fn->xss_clean($_POST['currency']));
     // if(empty($data)){
     //     $sql = "INSERT INTO `settings`(`variable`, `value`) VALUES ('currency','$currency')";
     //     $db->sql($sql);
